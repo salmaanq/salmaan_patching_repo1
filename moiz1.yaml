@@ -1,0 +1,10 @@
+# moiz wrote this
+---
+- name: restarting httpd
+  hosts: salmaan
+  gather_facts: no
+  tasks:
+    - name: restart
+      service:
+        name: httpd
+        state: restarted
